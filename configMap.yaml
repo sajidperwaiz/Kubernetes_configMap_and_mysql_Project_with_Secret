@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devops-demo
+data:
+  # property-like keys; each key maps to a simple value
+  levels: "12"
+  levels_properties_file_name: "lol.properties"
+
+  # file-like keys
+  level.properties: |
+    level.types=easy,medium,hard
+    level.maximum-lives=12
